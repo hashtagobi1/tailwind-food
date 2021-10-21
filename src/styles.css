@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.badge {
+  @apply bg-secondary-100
+  text-secondary-200 text-xs
+  p-2
+  uppercase
+  font-bold
+  rounded-full
+  absolute
+  top-0
+  mt-2
+  flex  items-center;
+}
+
+.card {
+  @apply bg-white rounded overflow-hidden shadow-lg relative;
+}
+
+.btn {
+  @apply rounded-full py-2 py-3 uppercase text-xs font-bold cursor-pointer tracking-widest;
+}
+
+.clockIcon {
+  @apply w-6 mr-1;
+}
+
+.linkIcon {
+  @apply px-4 flex justify-end mt-2 border-r-4 border-red-400;
+}
+.navIcon {
+  @apply w-5 ml-4;
+}
+.li {
+  @apply p-1;
+}
+.transitory {
+  @apply transition ease-in-out
+  duration-700;
+}
